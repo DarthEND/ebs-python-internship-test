@@ -25,7 +25,7 @@ class Blog(models.Model):
 
 class Comments(models.Model):
     text = models.TextField()
-    blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
+    blog = models.ForeignKey(Blog, on_delete=models.CASCADE, related_name="comments")
 
     def __str__(self):
         return self.text
