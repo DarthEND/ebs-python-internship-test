@@ -6,6 +6,7 @@ db.sqlite3
 .coverage
 htmlcov/*
 .mypy_cache/
+.vscode/
 
 # Static files
 static/*
